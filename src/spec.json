@@ -1,0 +1,401 @@
+{
+  "title": "Gestione del patrimonio immobiliare",
+  "description": "Prototipo navigabile per consultare gli immobili in carico alla Provincia, distinguerli per regime patrimoniale e tipologia e monitorare valori e date delle perizie di stima. Dati dimostrativi inventati; i valori possono essere aggiornati tramite importazione manuale dei fogli di stima.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Quadro patrimoniale",
+      "description": "Riepilogo degli immobili disponibili e indisponibili, con valori di stima e stato di aggiornamento delle perizie. I valori sintetici sono calcolati sui dati dimostrativi presenti nell’inventario.",
+      "metrics": [
+        {
+          "label": "Immobili censiti",
+          "value": "8"
+        },
+        {
+          "label": "Patrimonio disponibile",
+          "value": "5"
+        },
+        {
+          "label": "Patrimonio indisponibile",
+          "value": "3"
+        },
+        {
+          "label": "Terreni disponibili",
+          "value": "3"
+        },
+        {
+          "label": "Fabbricati disponibili",
+          "value": "2"
+        },
+        {
+          "label": "Perizie da aggiornare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ],
+      "rows": [
+        [
+          "LUM-PAT-001",
+          "Prato delle Nebbie",
+          "Disponibile",
+          "Terreno",
+          "€ 184.000",
+          "18/03/2025"
+        ],
+        [
+          "VEL-PAT-002",
+          "Casa delle Lanterne",
+          "Disponibile",
+          "Fabbricato",
+          "€ 425.000",
+          "07/02/2025"
+        ],
+        [
+          "NUB-PAT-003",
+          "Campo dei Salici",
+          "Disponibile",
+          "Terreno",
+          "€ 132.500",
+          "22/11/2024"
+        ],
+        [
+          "LUM-PAT-004",
+          "Magazzino delle Vele",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 298.000",
+          "16/01/2025"
+        ],
+        [
+          "VEL-PAT-005",
+          "Bosco dei Riflessi",
+          "Disponibile",
+          "Terreno",
+          "€ 96.000",
+          "12/09/2024"
+        ],
+        [
+          "NUB-PAT-006",
+          "Palazzo del Cardo",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 610.000",
+          "03/12/2024"
+        ],
+        [
+          "LUM-PAT-007",
+          "Officina delle Nuvole",
+          "Disponibile",
+          "Fabbricato",
+          "€ 372.000",
+          "28/02/2025"
+        ],
+        [
+          "VEL-PAT-008",
+          "Piana dei Cristalli",
+          "Indisponibile",
+          "Terreno",
+          "€ 215.000",
+          "30/08/2024"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "inventario-immobili",
+      "title": "Inventario immobili",
+      "description": "Tabella consultabile dell’intero patrimonio immobiliare, filtrabile per regime patrimoniale e tipologia e ricercabile per codice o denominazione. Il form consente di registrare un immobile e i dati essenziali della relativa stima.",
+      "metrics": [
+        {
+          "label": "Disponibili",
+          "value": "5"
+        },
+        {
+          "label": "Indisponibili",
+          "value": "3"
+        },
+        {
+          "label": "Terreni",
+          "value": "4"
+        },
+        {
+          "label": "Fabbricati",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ],
+      "rows": [
+        [
+          "LUM-PAT-001",
+          "Prato delle Nebbie",
+          "Disponibile",
+          "Terreno",
+          "€ 184.000",
+          "18/03/2025"
+        ],
+        [
+          "VEL-PAT-002",
+          "Casa delle Lanterne",
+          "Disponibile",
+          "Fabbricato",
+          "€ 425.000",
+          "07/02/2025"
+        ],
+        [
+          "NUB-PAT-003",
+          "Campo dei Salici",
+          "Disponibile",
+          "Terreno",
+          "€ 132.500",
+          "22/11/2024"
+        ],
+        [
+          "LUM-PAT-004",
+          "Magazzino delle Vele",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 298.000",
+          "16/01/2025"
+        ],
+        [
+          "VEL-PAT-005",
+          "Bosco dei Riflessi",
+          "Disponibile",
+          "Terreno",
+          "€ 96.000",
+          "12/09/2024"
+        ],
+        [
+          "NUB-PAT-006",
+          "Palazzo del Cardo",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 610.000",
+          "03/12/2024"
+        ],
+        [
+          "LUM-PAT-007",
+          "Officina delle Nuvole",
+          "Disponibile",
+          "Fabbricato",
+          "€ 372.000",
+          "28/02/2025"
+        ],
+        [
+          "VEL-PAT-008",
+          "Piana dei Cristalli",
+          "Indisponibile",
+          "Terreno",
+          "€ 215.000",
+          "30/08/2024"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ]
+    },
+    {
+      "id": "patrimonio-disponibile",
+      "title": "Patrimonio disponibile",
+      "description": "Elenco dei soli immobili del patrimonio disponibile, suddivisi tra terreni e fabbricati. Cerca e filtra la tabella per confrontare le stime e individuare le perizie meno recenti.",
+      "metrics": [
+        {
+          "label": "Immobili disponibili",
+          "value": "5"
+        },
+        {
+          "label": "Terreni disponibili",
+          "value": "3"
+        },
+        {
+          "label": "Fabbricati disponibili",
+          "value": "2"
+        },
+        {
+          "label": "Valore complessivo stimato",
+          "value": "€ 1.209.500"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ],
+      "rows": [
+        [
+          "LUM-PAT-001",
+          "Prato delle Nebbie",
+          "Disponibile",
+          "Terreno",
+          "€ 184.000",
+          "18/03/2025"
+        ],
+        [
+          "VEL-PAT-002",
+          "Casa delle Lanterne",
+          "Disponibile",
+          "Fabbricato",
+          "€ 425.000",
+          "07/02/2025"
+        ],
+        [
+          "NUB-PAT-003",
+          "Campo dei Salici",
+          "Disponibile",
+          "Terreno",
+          "€ 132.500",
+          "22/11/2024"
+        ],
+        [
+          "VEL-PAT-005",
+          "Bosco dei Riflessi",
+          "Disponibile",
+          "Terreno",
+          "€ 96.000",
+          "12/09/2024"
+        ],
+        [
+          "LUM-PAT-007",
+          "Officina delle Nuvole",
+          "Disponibile",
+          "Fabbricato",
+          "€ 372.000",
+          "28/02/2025"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "perizie-di-stima",
+      "title": "Perizie di stima",
+      "description": "Controllo delle ultime valutazioni per terreno e fabbricati. Registra l’importo e la data riportati nel foglio di stima del rispettivo tipo di immobile; gli aggiornamenti sono inseriti manualmente, senza caricamento di allegati.",
+      "metrics": [
+        {
+          "label": "Perizie registrate",
+          "value": "8"
+        },
+        {
+          "label": "Terreni",
+          "value": "4"
+        },
+        {
+          "label": "Fabbricati",
+          "value": "4"
+        },
+        {
+          "label": "Perizie da aggiornare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ],
+      "rows": [
+        [
+          "LUM-PAT-001",
+          "Prato delle Nebbie",
+          "Disponibile",
+          "Terreno",
+          "€ 184.000",
+          "18/03/2025"
+        ],
+        [
+          "VEL-PAT-002",
+          "Casa delle Lanterne",
+          "Disponibile",
+          "Fabbricato",
+          "€ 425.000",
+          "07/02/2025"
+        ],
+        [
+          "NUB-PAT-003",
+          "Campo dei Salici",
+          "Disponibile",
+          "Terreno",
+          "€ 132.500",
+          "22/11/2024"
+        ],
+        [
+          "LUM-PAT-004",
+          "Magazzino delle Vele",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 298.000",
+          "16/01/2025"
+        ],
+        [
+          "VEL-PAT-005",
+          "Bosco dei Riflessi",
+          "Disponibile",
+          "Terreno",
+          "€ 96.000",
+          "12/09/2024"
+        ],
+        [
+          "NUB-PAT-006",
+          "Palazzo del Cardo",
+          "Indisponibile",
+          "Fabbricato",
+          "€ 610.000",
+          "03/12/2024"
+        ],
+        [
+          "LUM-PAT-007",
+          "Officina delle Nuvole",
+          "Disponibile",
+          "Fabbricato",
+          "€ 372.000",
+          "28/02/2025"
+        ],
+        [
+          "VEL-PAT-008",
+          "Piana dei Cristalli",
+          "Indisponibile",
+          "Terreno",
+          "€ 215.000",
+          "30/08/2024"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Immobile",
+        "Regime patrimoniale",
+        "Tipologia",
+        "Valore di stima",
+        "Data ultima perizia"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "terracotta",
+    "fonts": "classico"
+  }
+}
